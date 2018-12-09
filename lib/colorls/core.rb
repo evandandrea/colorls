@@ -21,6 +21,7 @@ module ColorLS
       @screen_width = IO.console.winsize[1]
       @screen_width = 80 if @screen_width.zero?
 
+      STDERR.puts "one line: #{@one_per_line}"
       init_colors colors
 
       @contents   = init_contents(input)
