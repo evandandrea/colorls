@@ -7,7 +7,7 @@ module ColorLS
     def initialize(*args)
       @args = args
       @light_colors = false
-
+      STDERR.puts "is a tty? #{STDOUT.tty?} #{STDIN.tty?} #{STDERR.tty?}"
       @opts = {
         show: false,
         sort: true,
